@@ -190,6 +190,7 @@
 	clear: both;
 	position: relative;
     top: 10px;
+	height: auto;
 }
 
 .schedule ul{
@@ -298,7 +299,7 @@
 .schedule p{width: 95%;text-align: left;}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
 #jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 45px;}
 .nav-tabs .nav-link.active,

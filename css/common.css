@@ -615,10 +615,11 @@ a:hover { opacity: 0.5; }
 #header .logo {width: 30%;}
 #header .tgs{width: 60%;height:50px; }
 #bottom-contents .others .links li {width: 40%;}
-
+	#footer li.L{line-height: 4.2em;}
 #footer li.logo {
-	width: 60px;
+    width: 60px;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 #footer li.r {
     width: 100%;

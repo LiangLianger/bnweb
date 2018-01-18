@@ -123,8 +123,14 @@
     text-align: center;margin-bottom: 15px;
 	background-color: #FFFFFF;
 }
-/*.orangeBox img{width: 100%; height: auto;}*/
 
+.oBox{
+    border: 5px solid #ee7a00;
+    text-align: center;margin-bottom: 15px;
+	background-color: #FFFFFF;
+}
+.oBox img{width: 100%;max-width:733px ; height: auto;}
+h2.orange img{width: 100% ; height: auto;}
 h2.red,
 h2.orange,
 h2.yellow,
@@ -609,17 +615,17 @@ h2.Lightred a{
 .map-nav{width: 270px;}
 .p1{width: 270px;height: 22px;}
 
-.p2{width: 76px;height: 23px;} 
-.p3{width: 128px;height: 23px;} 
-.p4{width: 66px;height: 23px;} 
+.p2{width: 76px;height: 24px;} 
+.p3{width: 128px;height: 24px;} 
+.p4{width: 66px;height: 24px;} 
 
-.p5{width: 76px;height: 23px;}
-.p6{width: 128px;height: 23px;}
-.p7{width: 66px;height: 23px;}
+.p5{width: 76px;height: 24px;}
+.p6{width: 128px;height: 24px;}
+.p7{width: 66px;height: 24px;}
 
-.p8{width: 76px;height: 23px;}
-.p9{width: 128px;height:23px;}
-.p10{width: 66px;height: 23px;}
+.p8{width: 76px;height: 24px;}
+.p9{width: 128px;height:24px;}
+.p10{width: 66px;height: 24px;}
 
 .p11{width: 76px;height: 25px;}
 .p12{width: 128px;height: 25px;}
@@ -689,6 +695,11 @@ h2.Lightred{
 }
 .h61 img{  height: 20px;}
 .g-box span{font-size: 0.7rem;}
+.m7 a{
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
 }
 
 @media (max-width: 320px) {

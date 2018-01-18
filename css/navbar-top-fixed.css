@@ -44,17 +44,20 @@ body {
   background: no-repeat center center;
   background-size: 100% 100%;
 }
-	.navbar-collapse{
+   .navbar-collapse{
     top: 0px;
-    width: 50%;
+/*    width: 50%;
+	  right: -50%;
     float: right;
-    height: 100vh;
+    height: 100vh;*/
+	   opacity: 0.9;
+    
 }	
+
 .navbar-nav	{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-   
 }
 	
 .navbar-nav li{
@@ -76,9 +79,15 @@ body {
 	opacity: 1;
 }
 
-.menu-open { -webkit-transform: translateX(0%); transform: translateX(0%); }
+.menu-open { 
+	-webkit-transform: translateX(0%); 
+	-webkit-transform: translateY(100%);
+	transform: translateX(0%);
+transform: translateY(100%);}
+
 #menu-btn-close img{
-	-webkit-transform: translateX(0%); transform: translateX(0%);
+	-webkit-transform: translateY(0%);
+    transform: translateY(0%);
 	width: 60px;
 	height: 60px;}	
 

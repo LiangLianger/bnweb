@@ -205,7 +205,7 @@
     background-color: #e60012;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 75% auto;
+    background-size: 45% auto;
     padding: 20px;
     font-size: 0px;
     text-indent: -999px;
@@ -324,16 +324,16 @@
     clear: both;
     display:block;
 	}
-.live{
+	
+.live {
     width: 100%;
     clear: both;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-	 background-size: 30% auto;
-    height: 65px;
-    float: none;
-	padding: 20px;
+   
+    background-color: #E60012;
+	overflow: hidden;
+}
+.live a{
+    background-size: auto 40px;
 }
 
 .time ul{
@@ -385,10 +385,7 @@
 }
 .txt{height: 175px;}
 .time ul{height: 125px;}	
-.live{
-    padding: 15px;
-    height: 45px;
-}
+
 .fberBox{width: 18%;}
 }
 
@@ -413,7 +410,7 @@
     width: 29%;
     margin-left: 15px;
 }
-.live{height: 50px;}
+
 	.fbBox{width: 80%;}
     .fberBox{width: 35%;}
 }
@@ -437,7 +434,7 @@
 }
 .txt{height: 140px;}
 .time ul{height: 120px;}
-.live{height: 65px;}
+
 }
 
 @media (max-width: 414px) {
