@@ -1,50 +1,50 @@
-/* global jQuery, $ */
+ // global jQuery, $ 
 $(document).ready(function () {
-  // $('#myTab').find('.nav-link').click(function () {
-  //   var $this = $(this)
-  //   var target = $this.attr('href')
-  //   $(target).find('.liveBox').text('111')
-  //   console.log($(target).find('.liveBox'));
-  // })
-  // 日期
-  var today = new Date()
-  var d1 = '2018/1/26'
-  var d2 = '2018/1/27'
-  var d3 = '2018/1/28'
-  var d4 = '2018/1/29'
+  var d1 = new Date(2018, 0, 26) // 2017.1.26
+  var now = new Date()
+  $('a[data-toggle="tab"]').click(function (e) {
+    var url = $(this).data('url')
+    var video = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + url + '?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>'
+    var target = $(e.target).attr('href')
+    $(target).find('div[data-box="live"]').html(video)
 
-  function formatDate(e) {
-    var month = e.getMonth() + 1
-    var day = e.getDate()
-    checkYMD = e.getFullYear() + '/' + (month < 10 ? '0' : '') + month + '/' + (day < 10 ? '0' : '') + day
+    // 連動 TAB
+    var id = $(this).attr('id')
+    // console.log(id)
+    if (id === 'jan26-tab' || id === 'jan27-tab') {
+      $('#tab267').tab('show')
+    } else if (id === 'jan28-tab' || id === 'jan29-tab') {
+      $('#tab289').tab('show')
+    }
+  })
+  $('#jan27').trigger('click')
+  function chechDay () {
+    var offset = Math.floor((now - d1) / (1000 * 60 * 60 * 24) + 1)
+    switch (offset) {
+      case 1:
+        $('#myTab #jan26-tab').trigger('click')
+        $('#tab267').trigger('click')
+        // console.log('1.26')
+        break
+      case 2:
+        $('#myTab #jan27-tab').trigger('click')
+        $('#tab267').trigger('click')
+        // console.log('1.27')
+        break
+      case 3:
+        $('#myTab #jan28-tab').trigger('click')
+        $('#tab289').trigger('click')
+        // console.log('1.28')
+        break
+      case 4:
+        $('#myTab #jan29-tab').trigger('click')
+        // console.log('1.29')
+        $('#tab289').trigger('click')
+        break
+      default:
+        // console.log(offset)
+        break
+    }
   }
-  formatDate(today)
-  // console.log(checkYMD)
-  // var img = $("#myTabContent").find('.liveBox').html()
-  // $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  //   var url = $(this).data('url')
-  //   var related = $(e.relatedTarget).attr('href')
-  //   var video = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + url + '?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>'
-  //   var target = $(e.target).attr('href')
-  //   $(target).find('.liveBox').html(video)
-  // })
-  // console.log('today: ' + today + '// d1:' + d1 + '// d2: ' + d2);
-  switch(checkYMD){
-    case d1:
-      $('#myTab #jan26-tab').tab('show')
-      break;
-    case d2:
-      $('#myTab #jan27-tab').tab('show')
-      break;
-    case d3:
-      $('#myTab #jan28-tab').tab('show')
-      break;
-    case d4:
-      $('#myTab #jan29-tab').tab('show')
-      break;
-    default:
-      break;
-  }
-
-
+  chechDay()
 })
