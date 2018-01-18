@@ -1,0 +1,328 @@
+@charset "utf-8";
+/*
+	----------------------------
+	youtubeBox
+	____________________________
+*/
+.youtubeBox{
+	width: 95%;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+	z-index: 99;
+}
+
+.schedule{
+    display: block;
+    width: 25%;
+	height: 470px;
+    float: left;
+    font-size: 0.9rem;
+}
+
+.schedule ul{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+}
+.schedule li{
+    width: 100%;
+    color: #525252;
+    font-weight: 600;
+    line-height: 1.1rem;
+    text-align: center;
+}
+.schedule li time{
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #ED6D00;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+.schedule p{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.schedule span img.pc{display: block; width: 100%; height: auto;}
+
+.schedule span img.sp{display: none;}
+
+.liveBox{
+    display: block;
+    width: 75%;
+    height: auto;
+    padding: 5px;
+    background-color: #000000;
+    float: right;
+}
+
+.liveBox img{
+	width: 100%;
+    height: auto;}
+
+.nav-tabs{
+    border-bottom-width: 0px;
+}
+.nav-item{
+    width: 25%;
+    text-align: center;
+    
+}
+.nav-link{
+    background-position: 0px 0px;
+    background-size: 100% auto;
+}
+#jan26-tab{
+    background-image: url(../img/common/0126.png);
+    height: 54px;
+    font-size: 0px;
+    
+}
+
+#jan27-tab{
+    background-image: url(../img/common/0127.png);
+    height: 54px;
+    font-size: 0px;
+}
+
+#jan28-tab{
+    background-image: url(../img/common/0128.png);
+    height: 54px;
+    font-size: 0px;
+
+}
+
+#jan29-tab{
+    background-image: url(../img/common/0129.png);
+    height: 54px;
+    font-size: 0px;
+}
+
+.box{
+    background-color: #FFFFFF;
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    border: 5px solid #ED6D00;
+}
+.nav-tabs .nav-link {border: 0px solid transparent;}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -54px;
+}
+
+.navbar{ top: 0px;}
+
+@media (max-width: 1100px) {
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 47px;}
+
+.schedule{height: 430px;}
+
+.schedule li{ line-height: 1rem;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -50px;
+}
+}
+@media (max-width: 1024px) {
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 40px;}
+	
+.schedule{height: 400px;}
+}
+
+@media (max-width: 960px) {
+.schedule{height: 380px;}
+
+.schedule ul{
+    width: 100%;
+    padding-right: 5px;
+}
+.schedule li{
+    line-height: 1rem;
+    font-weight: normal;
+}
+.schedule li time{
+	font-size: 0.9rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 39px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -45px;
+}
+	
+}
+
+@media (max-width: 812px) {
+.schedule span img.pc{display: none;}
+.schedule span img.sp{display: block;width: 100%; height: auto;}
+	
+.liveBox{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.schedule{
+    width: 100%;
+    font-size: 1.2rem;
+	clear: both;
+	position: relative;
+    top: 10px;
+}
+
+.schedule ul{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.schedule li{
+    width: 100%;
+    line-height: 1.5rem;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+	margin-bottom: 10px;
+}
+.schedule li time{
+	font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}	
+.schedule p{text-align: center;margin-bottom: 10px;}
+	
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 36px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -36px;
+}
+}
+
+@media (max-width: 767px) {
+
+#jan26-tab{
+    background-image: url(../img/common/sp0126.png);
+	background-size: 100% auto;
+    height: 89px;
+    font-size: 0px;
+}
+
+#jan27-tab{
+    background-image: url(../img/common/sp0127.png);
+    background-size: 100% auto;
+   height: 89px;
+    font-size: 0px;
+}
+
+#jan28-tab{
+    background-image: url(../img/common/sp0128.png);
+    background-size: 100% auto;
+    height: 89px;
+    font-size: 0px;
+}
+
+#jan29-tab{
+    background-image: url(../img/common/sp0129.png);
+   background-size: 100% auto;
+    height: 89px;
+    font-size: 0px;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -99px;
+}
+}
+
+@media (max-width: 640px) {
+
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 78px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -82px;
+}
+}
+
+@media (max-width: 568px) {
+
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 70px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -73px;
+}
+.schedule li{
+    width: 100%;
+    line-height: 1.2rem;
+}
+.schedule p{width: 100%;}
+}
+
+@media (max-width: 414px) {
+
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 48px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -53px;
+}
+.schedule li{
+	font-size: 0.95rem;
+    width: 100%;
+    line-height: 1.2rem;
+}
+.schedule p{width: 95%;text-align: left;}
+}
+
+@media (max-width: 375px) {
+
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 45px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -49px;
+}
+.schedule li{ font-size: 0.85rem;}
+.schedule li time{
+	font-size: 0.9rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+}
+
+@media (max-width: 320px) {
+
+#jan26-tab, #jan27-tab, #jan28-tab, #jan29-tab{ height: 36px;}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-position: 0px -41px;
+}
+.schedule li{
+    width: 100%;
+    line-height: 1.2rem;
+}
+}
